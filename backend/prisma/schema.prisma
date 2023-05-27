@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgres://admin:BSkC6PV7Fy69XEoHbadZKLr9V1P94Aiw@dpg-chnltf9mbg5577mrpl80-a.frankfurt-postgres.render.com/superheroes_v3qu"
+}
+
+model Superhero {
+  id                 Int    @id @default(autoincrement())
+  nickname           String
+  real_name          String
+  superpowers        String
+  origin_description String
+  catch_phrase       String
+  images             String
+}

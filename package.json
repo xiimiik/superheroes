@@ -1,0 +1,12 @@
+{
+  "name": "superheroes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "xiimiik",
+  "license": "ISC",
+  "scripts": {
+    "web": "cd frontend && npm start",
+    "server": "cd backend && npm start",
+    "install": "cd frontend && npm i && cd ../backend && npm i"
+  }
+}
