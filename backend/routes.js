@@ -17,8 +17,6 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-loadNewHeroes();
-
 router.get("/superheroes", heroesController.getAllSuperheroes);
 router.get("/superheroes/:heroId", heroesController.getSuperheroById);
 router.put("/superheroes/:heroId", upload.single("image"), heroesController.updateSuperhero);
